@@ -1,5 +1,5 @@
 
-const heroes = [
+let heroes = [
     {
         name: 'Slate Slabrock',
         type: 'dwarf',
@@ -15,7 +15,7 @@ const heroes = [
 ]
 
 
-const boss = {
+let boss = {
     health: 100,
     damage: 5,
     level: 1,
@@ -74,8 +74,32 @@ function buyJake(){
 
 
 function resetGame(){
-
+ heroes = [
+    {
+        name: 'Slate Slabrock',
+        type: 'dwarf',
+        damage: 5,
+        health: 100
+    },
+    {
+        name: 'Flint Ironstag',
+        type: 'elf',
+        damage: 10,
+        health: 50
+    }
+]
+ boss = {
+  health: 100,
+  damage: 5,
+  level: 1,
+  maxHealth: 100,
 }
+let gold = 0
+drawMonster()
+drawHeroes()
+}
+
+
 
 drawHeroes()
 drawMonster()
