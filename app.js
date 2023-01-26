@@ -169,7 +169,7 @@ drawHeroes()
 
 setInterval(damageHeroes, 2500)
 
-setInterval(reviveMonster, 2000)
+setInterval(reviveMonster, 1000)
 
 drawHeroes()
 drawMonster()
