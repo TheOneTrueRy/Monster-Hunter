@@ -1,3 +1,12 @@
+body{
+  font-family: "Super Legend Boy"; 
+}
+
+@font-face {
+  font-family: "Super Legend Boy";
+  src: url(SuperLegendBoy-4w8Y.ttf);
+}
+
 .myCard{
   margin-top: 10%;
   height: 90%;
@@ -5,7 +14,6 @@
   border: 2px solid white;
   background-color: gray;
   border-radius: 4px;
-
 }
 
 .third{
