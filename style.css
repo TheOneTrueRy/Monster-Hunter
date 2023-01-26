@@ -73,6 +73,7 @@ body{
 
 .store-text{
   cursor: pointer;
+  user-select: none;
 }
 
 /* SECTION IDs */
