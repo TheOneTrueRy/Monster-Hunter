@@ -28,7 +28,7 @@ body{
 }
 
 .monster-row{
-  height: 41vh;
+  height: 36vh;
 }
 
 .monster-card{
@@ -42,7 +42,7 @@ body{
 }
 
 .UI{
-  height: 26vh;
+  max-height: 26vh;
 }
 
 .reset{
@@ -57,10 +57,20 @@ body{
   margin-top: 2em;
 }
 
+
 .nomb{
   margin-bottom: 0;
 }
 
 #monster{
   width: 30%;
+}
+
+#gold-bag{
+  max-height: 100%;
+}
+
+.bag{
+  height: 26vh;
+  width: auto;
 }
