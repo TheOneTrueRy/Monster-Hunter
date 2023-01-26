@@ -1,6 +1,5 @@
 let gold = 0
 let goldElem = document.getElementById("gold")
-goldElem.innerText = gold.toString()
 
 let heroes = [
     {
@@ -58,6 +57,11 @@ function drawHeroes(){
   })
   heroesElem.innerHTML = template
 }
+
+function drawGold(){
+  goldElem.innerText = `GOLD: ${gold.toString()}`
+}
+
 function drawMonster(){
 let health = boss.health
 let healthElem = document.getElementById("monster-health")
@@ -100,8 +104,8 @@ if(boss.health == 0){
   boss.damage = (boss.level * 2)
   boss.health = boss.maxHealth
   gold += 50
-  goldElem.innerText = `GOLD: ${gold.toString()}`
 }
+drawGold()
 drawMonster()
 }
 
@@ -110,12 +114,16 @@ drawMonster()
 
 
 function buyPotion(){
+  if(gold >= 20){
 heroes.forEach(hero =>{
-  hero.health += 15
-  if(hero.health > hero.maxhealth){
-    hero.health = hero.maxhealth
+    hero.health += 15
+    if(hero.health > hero.maxhealth){
+      hero.health = hero.maxhealth
+    }
+  })
   }
-})
+  gold -= 20
+drawGold()
 drawHeroes()
 }
 function buySam(){
@@ -165,3 +173,4 @@ setInterval(reviveMonster, 2000)
 
 drawHeroes()
 drawMonster()
+drawGold()
