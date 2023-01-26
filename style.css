@@ -17,7 +17,8 @@ body{
 }
 
 .third{
-  height: 33vh;
+  min-height: 33vh;
+  max-height: 33vh;
 }
 
 .mt-7{
