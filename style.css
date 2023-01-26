@@ -1,0 +1,17 @@
+.myCard{
+  margin-top: 10%;
+  height: 90%;
+  width: 100%;
+  border: 2px solid white;
+  background-color: gray;
+  border-radius: 4px;
+
+}
+
+.third{
+  height: 33vh;
+}
+
+.mt-7{
+  margin-top: 6em;
+}
