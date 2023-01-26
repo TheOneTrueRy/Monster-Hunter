@@ -43,14 +43,18 @@
         <div class="div monster-card text-center text-light">
           <p id="monster-health" class="mt-3 mb-1">HP: 100</p>
           <p class="fs-3">Monster</p>
-          <img id="monster" src="https://www.pinclipart.com/picdir/big/575-5759581_care-bears-clipart.png" alt="" class="img-fluid">
+          <img onclick="damageMonster()" id="monster" src="https://www.pinclipart.com/picdir/big/575-5759581_care-bears-clipart.png" alt="" class="img-fluid">
         </div>
       </div>
       <div class="col-3"></div>
     </div>
     <div class="row UI">
       <div id="store" class="col-6">
-
+        <div class="store-card text-light p-2">
+          <p onclick="buyPotion()" class="store-text">Buy Potion 20g</p>
+          <p onclick="buySam()" class="store-text"> Buy Sam 50g</p>
+          <p class="nomb store-text" onclick="buyJake()"> Buy Jake 1000g</p>
+        </div>
       </div>
       <div id="gold-bag" class="col-3 text-light d-flex align-items-center justify-content-center">
         <p id="gold" class="gold-bag-text fs-3 nomb">0</p>

@@ -23,25 +23,45 @@ const boss = {
 }
 
 
-function drawHeroes()
-function drawMonster()
+function drawHeroes(){
+
+}
+function drawMonster(){
+
+}
 
 
-function damageHeroes()
-function damageMonster()
+function damageHeroes(){
 
-
-
-function reviveMonster()
-
-
-
-
-
-function buyPotion()
-function buySam()
-function buyJake()
+}
+function damageMonster(){
+console.log("BAM")
+}
 
 
 
-function resetGame()
+function reviveMonster(){
+
+}
+
+
+
+
+
+function buyPotion(){
+console.log("Potion get")
+}
+function buySam(){
+  console.log("Sam get")
+
+}
+function buyJake(){
+  console.log("Jake get")
+
+}
+
+
+
+function resetGame(){
+
+}
