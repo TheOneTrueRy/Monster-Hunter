@@ -1,3 +1,4 @@
+
 const heroes = [
     {
         name: 'Slate Slabrock',
