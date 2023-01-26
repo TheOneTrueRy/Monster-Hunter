@@ -64,6 +64,8 @@ body{
 
 #monster{
   width: 30%;
+  cursor: pointer;
+  user-select: none;
 }
 
 #gold-bag{
