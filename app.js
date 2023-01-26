@@ -17,17 +17,18 @@ const heroes = [
 
 const boss = {
     health: 100,
-    maxHealth: 100,
     damage: 5,
-    level: 1
-}
-
+    level: 1,
+    maxHealth: 100,
+  }
 
 function drawHeroes(){
 
 }
 function drawMonster(){
-
+let health = boss.health
+let healthElem = document.getElementById("monster-health")
+healthElem.innerText = `HP: ${health.toString()}`
 }
 
 
@@ -35,7 +36,17 @@ function damageHeroes(){
 
 }
 function damageMonster(){
-console.log("BAM")
+let damage = 0
+
+heroes.forEach(hero => {
+  damage += hero.damage
+})
+
+boss.health -= damage
+if(boss.health < 0){
+  boss.health = 0
+}
+drawMonster()
 }
 
 
@@ -65,3 +76,6 @@ function buyJake(){
 function resetGame(){
 
 }
+
+drawHeroes()
+drawMonster()
