@@ -1,5 +1,7 @@
 body{
   font-family: "Super Legend Boy"; 
+  background-image: url(https://images.unsplash.com/photo-1599148401012-60bd30ff1967?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=327&q=80);
+  background-size: cover;
 }
 
 @font-face {
@@ -8,7 +10,7 @@ body{
 }
 
 .myCard{
-  margin-top: 10%;
+  margin-top: 5%;
   height: 90%;
   width: 100%;
   border: 2px solid white;
@@ -23,4 +25,22 @@ body{
 
 .mt-7{
   margin-top: 6em;
+}
+
+.monster-row{
+  height: 41vh;
+}
+
+.monster-card{
+  background-image: url(https://images.unsplash.com/photo-1441974231531-c6227db76b6e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1171&q=80);
+  background-size: cover;
+  border: 2px solid white;
+  border-radius: 5px;
+  width: 80%;
+  height: 100%;
+  text-shadow: 2px 2px 5px black;
+}
+
+#monster{
+  width: 30%;
 }
