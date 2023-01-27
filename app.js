@@ -121,8 +121,8 @@ heroes.forEach(hero =>{
       hero.health = hero.maxhealth
     }
   })
-  }
   gold -= 20
+  }
 drawGold()
 drawHeroes()
 }
@@ -131,7 +131,7 @@ function buySam(){
 
 }
 function buyJake(){
-  console.log("Jake get")
+  heroes.push = 
 
 }
 
