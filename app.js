@@ -42,6 +42,7 @@ function drawHeroes(){
                   <div class="col-12 mt-3">${hero.name}</div>
                   <div class="col-12 mt-7">HP: ${hero.health}</div>
                   <div class="col-12 mt-1">LV: ${hero.lv}</div>
+                  <div class="col-12 mt-1">DMG: ${hero.damage}</div>
                 </div>
               </div>
               <div class="col-6">
@@ -100,13 +101,20 @@ function reviveMonster(){
   let goldElem = document.getElementById("gold")
 if(boss.health == 0){
   boss.level++
-  boss.maxHealth = (boss.level * 100)
+  boss.maxHealth = Math.floor(boss.level * 100)
   boss.damage = (boss.level * 2)
   boss.health = boss.maxHealth
-  gold += 50
+  gold += (boss.level * 10)
+  heroes.forEach(hero =>{
+    hero.lv++
+    hero.damage = Math.floor(hero.damage * 1.2)
+    hero.maxhealth = Math.floor(hero.maxhealth * 1.1)
+    hero.health = hero.maxhealth
+  })
 }
 drawGold()
 drawMonster()
+drawHeroes()
 }
 
 
@@ -117,7 +125,7 @@ function buyPotion(){
   if(gold >= 20){
 heroes.forEach(hero =>{
     hero.health += 15
-    if(hero.health > hero.maxhealth){
+    if(hero.health > hero.maxhealth && hero.health > 0){
       hero.health = hero.maxhealth
     }
   })
@@ -127,11 +135,33 @@ drawGold()
 drawHeroes()
 }
 function buySam(){
-  console.log("Sam get")
+  let sam = {
+    name: 'Samantha Dison',
+    type: 'human',
+    damage: 20,
+    health: 200,
+    lv: 1,
+    maxhealth: 200
+  }
+  if(gold >= 50){
+    gold -= 50
+    heroes.push(sam)
+  }
 
 }
 function buyJake(){
-  heroes.push = 
+  let jake = {
+    name: 'Jake Overall',
+    type: 'human',
+    damage: 100,
+    health: 500,
+    lv: 1,
+    maxhealth: 500
+  }
+  if(gold >= 1000){
+    gold -= 1000
+    heroes.push(jake)
+  }
 
 }
 
